@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@300&family=Roboto:wght@300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+
+}
+.box,
+.box_wallpaper__hover_img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 2px solid red;
+}
+.box_menu{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    background-color: #f8e22d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    cursor: pointer;
+}
+.box_menu ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+
+}
+.box_menu ul li{
+    width: calc(100%/5);
+    list-style-type: none;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.box_menu ul li:hover{
+    background-color: #f7e664;
+}
+.box_menu ul li:first-child img{
+    width: 80px;
+}
+.box_menu ul li:first-child a{
+   font-size: 40px;
+}
+.box_menu ul li:last-child{
+    border-right: none;
+}
+.box_menu ul li img{
+    width: 35px;
+    margin: 10px;
+}
+.box_menu ul li a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.box_wallpaper{
+    display: absolute;
+    top: 0px;
+    left: 0px;
+}
+.hover_img_03
+{
+    position: absolute;
+    top: 70px;
+    left: 65px;
+    opacity: 0;
+    cursor:pointer;
+}
+.hover_img_02
+{
+    position: absolute;
+    top: 100px;
+    left: 475px;
+    opacity: 0;
+    cursor:pointer;
+}
+.hover_img_01
+{
+    position: absolute;
+    top: 190px;
+    left: 920px;
+    opacity: 0;
+    cursor:pointer;
+}
+.hover_img_01:hover,
+.hover_img_02:hover,
+.hover_img_03:hover{
+    opacity: .5;
+}
+div.hover_img_03:hover ~ div.text_img_03{
+    display: flex;
+}
+div.hover_img_02:hover ~ div.text_img_02{
+    display: flex;
+}
+div.hover_img_01:hover ~ div.text_img_01{
+    display: flex;
+}
+.text_img_03,
+.text_img_02,
+.text_img_01{
+    width: 280px;
+    height: 140px;
+    border-radius: 20px;
+    background-color: #f8e22d;
+    color: black;
+    font-size: 32px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    box-shadow: 10px 10px 4px #978921;
+}
+.text_img_01{
+    top: 700px;
+    right: 410px;
+}
+.text_img_02{
+    top: 750px;
+    right: 1150px;
+}
+.text_img_03{
+    top: 556px;
+    left: 90px;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+}
+h5{
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
